@@ -1,0 +1,112 @@
+.auth-container {
+    max-width: 450px; 
+    margin: 40px auto; 
+    background-color: var(--spotify-dark-gray); 
+    padding: 40px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+    text-align: center; 
+  }
+  
+  .auth-container h2 {
+    color: var(--text-white);
+    margin-bottom: 30px; 
+    font-size: 2em; 
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    text-align: left; 
+  }
+  
+  .form-group {
+      margin-bottom: 15px; 
+  }
+  
+  .auth-form label {
+    display: block; 
+    color: var(--text-light-gray); 
+    margin-bottom: 8px; 
+    font-weight: bold; 
+    font-size: 0.9em; 
+    text-transform: uppercase; 
+  }
+  
+  .auth-form input[type="text"],
+  .auth-form input[type="password"],
+  .auth-form input[type="email"] {
+    width: 100%; 
+    padding: 12px 15px; 
+    border: 1px solid var(--spotify-light-gray); 
+    border-radius: 4px;
+    background-color: var(--spotify-gray); 
+    color: var(--text-white); 
+    font-size: 1.1em;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  .auth-form input[type="text"]:focus,
+  .auth-form input[type="password"]:focus,
+  .auth-form input[type="email"]:focus {
+    outline: none; 
+    border-color: var(--spotify-green); 
+    box-shadow: 0 0 0 2px rgba(29, 185, 84, 0.4); 
+  }
+  
+  .auth-form button {
+    width: 100%; 
+    padding: 15px 20px;
+    background-color: var(--spotify-green); 
+    color: var(--spotify-black); 
+    border: none;
+    border-radius: 500px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px; 
+    transition: transform 0.2s ease, background-color 0.3s ease; 
+  }
+  
+  .auth-form button:hover {
+    background-color: var(--spotify-light-green); 
+    transform: scale(1.02); 
+  }
+  
+   .auth-form button:active {
+    transform: scale(0.98); 
+   }
+  
+  .auth-message {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 1em;
+      min-height: 1.2em; 
+  }
+  
+  .auth-message.success {
+      color: var(--spotify-green);
+     
+  }
+  
+   .auth-message.error {
+      color: #ff4d4d; 
+      
+   }
+  
+   
+   nav a {
+       margin: 0 10px;
+       color: var(--text-light-gray);
+       text-transform: uppercase;
+       font-size: 0.9em;
+       font-weight: bold;
+   }
+  
+   nav a:hover {
+       color: var(--text-white);
+       text-decoration: none;
+   }
